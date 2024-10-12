@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100dvh;
+}
+
+img{
+  display: block;
+  height: 100px;
+  width: 100px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform  0.3s ease;
+  border-radius: 10px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  width: 100%;
+  gap: 10px;
+  margin: 100px auto;
+}
+
+h1{
+  text-align: center;
+  transition: font-size 0.3s ease;
+}
+
+img:hover{
+  transform: scale(2);
+  object-fit: contain;
+}
+
+h1:hover{
+  font-size: 50px;
+}
+
+

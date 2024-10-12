@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-color: red;
+  position: relative;
+  height: 100px;
+  margin-left: 50px;
+}
+
+.container2{
+  background-color: green;
+}
+
+.item {
+  width: 50px;
+  aspect-ratio: 4/3;
+  display: inline-block;
+}
+
+.item1{
+  background-color: yellow;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.item2{
+  background-color: green;
+  display: none;
+  /* visibility: hidden; */
+}
+
+.item3{
+  background-color: aqua;
+}
+
+.container2 > .item1{
+  background-color: black;
+  position: absolute;
+  left:10px;
+  top: 0;
+}
+
+.padredelpadre{
+  background-color: violet;
+}

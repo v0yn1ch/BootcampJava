@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-color: red;
+}
+
+.item{
+  width: 50px;
+  aspect-ratio: 4/3;
+  display: inline-block;
+}
+
+.item1{
+  background-color: aqua;
+}
+
+.item2{
+  background-color: green;
+  display: none; /* desaparece el elemento por completo */
+  /* visibility: hiddden; */
+}
+
+.item3{
+  background-color: blue;
+}
