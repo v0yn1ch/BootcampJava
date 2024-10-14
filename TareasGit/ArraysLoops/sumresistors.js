@@ -1,25 +1,28 @@
-const array = [];
+let sumaR = [];
 let num;
 
-function sumResist(array) {
-  let suma;
-  for (i = 0; i < array.lenght; i++) {
-    if (array[i] < 0) {
-      Math.abs(array[i]);
-      console.log("|" + array[i] + "|" + " + ");
+function sumResist(sumaR) {
+  let suma = 0;
+  for (let i = 0; i < sumaR.length; i++) {
+    if (sumaR[i] < 0) {
+      console.log("| " + sumaR[i] + " | " + " + ");
     } else {
-      console.log(array[i] + " + ");
+      console.log(sumaR[i] + " + ");
     }
-    suma += array[i];
+    suma += Math.abs(sumaR[i]);
   }
-  console.log("= " + suma);
+  return suma;
 }
 
 while (num != 0) {
   num = +prompt(
-    "Ingrese los valores de las resistencias (Ingrese 0 para salir)",
+    "Ingrese los valores de las resistencias (Ingrese 0 para finalizar)",
   );
-  array.push(num);
+  if (num != 0) {
+    sumaR.push(num);
+  } else {
+    break;
+  }
 }
 
-sumResist(array);
+console.log("= " + sumResist(sumaR));
