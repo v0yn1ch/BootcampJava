@@ -1,8 +1,8 @@
 import "./App.css";
 //import Button from "./assets/components/Button/Button";
-import Navbar from "./assets/components/Navbar/Navbar";
-import Products from "./assets/components/Products/Products";
-import RecipeReviewCard from "./assets/components/Card/Card";
+import Navbar from "./components/Navbar/Navbar";
+import Products from "./components/Products/Products";
+import RecipeReviewCard from "./components/Card/Card";
 
 function App() {
   const tenisMorados =
@@ -49,6 +49,7 @@ function App() {
       <div style={stylesCard}>
         <RecipeReviewCard />
       </div>
+
       {/*
       <h1>Hola React</h1>
       <Button text="Registrarse" />
