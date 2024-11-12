@@ -8,9 +8,7 @@ public class Codigo4 {
 
         System.out.print("Turno del jugador 1 (introduzca piedra, papel o tijeras): ");
         String j1;
-        do {
             j1 = s.nextLine().toLowerCase();
-        } while (!j1.equals("piedra")&& !j1.equals("papel") && !j1.equals("tijeras"));
 
         System.out.print("Turno del jugador 2 (introduzca piedra, papel o tijeras): "); // Cambiando numero del jugador
 //    Scanner s2 = new Scanner(System.in); no se necesita este scanner
